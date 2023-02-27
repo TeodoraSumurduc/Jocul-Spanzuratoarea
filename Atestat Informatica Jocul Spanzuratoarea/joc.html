@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title >Spanzuratoarea</title>
+</head>
+<body class="bodymain" style="overflow: hidden">
+    <div class="trunchi" ></div>
+    <div class="trunchi2"></div>
+    <div class="rope"></div>
+    <div class="cap" id="cap"></div>
+    <div class="corp" id="corp"></div>
+    <div class="bratstanga" id="bratstanga"></div>
+    <div class="bratdreapta" id="bratdreapta"></div>
+    <div class="piciorstanga"id="piciorstanga"></div>
+    <div class="piciordrept" id="piciordreapta"></div><br>
+<p style="position: relative;top: -150px;">Au fost folosite literele: <span id="cuvinte"> </span></p> 
+<br>
+    <p style="position: relative;top:-150px"id="necunoscuta"></p>
+    <button style="position: relative;top: -150px;" onclick="cuvant()" class="scris" >Introdu litera</button>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+    <button style="position: relative;top: -150px;" onclick="reset()" class="scris2"> &nbsp&nbsp&nbsp&nbsp  Reset &nbsp&nbsp&nbsp&nbsp </button>
+    <p style="position: relative;top: -150px;" id="scriss"></p>
+</body>
+<script type="text/javascript">
+     var 
+cuvinte=[], i=0,a=[];
+cuvinte[i]="mancare",i++;
+cuvinte[i]="analfabet",i++;
+cuvinte[i]="cafea",i++;
+cuvinte[i]="lapte",i++;
+cuvinte[i]="matematica",i++;
+cuvinte[i]="romana",i++;
+cuvinte[i]="informatica",i++;
+cuvinte[i]="chimie",i++;
+cuvinte[i]="intelectual",i++;
+cuvinte[i]="logica",i++;
+cuvinte[i]="economie",i++;
+cuvinte[i]="fizica",i++;
+cuvinte[i]="orchestra",i++;
+cuvinte[i]="sport",i++;
+cuvinte[i]="orb",i++;
+cuvinte[i]="original",i++;
+cuvinte[i]="pictorama",i++;
+cuvinte[i]="jucator",i++;
+cuvinte[i]="pariuri",i++;
+cuvinte[i]="haiduc",i++;
+
+
+/*----------------------------------------------------------------
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+cuvinte[i]="",i++;
+*/
+
+
+ var random=Math.floor(Math.random() * i);
+   var cuv=cuvinte[random];
+   for(let j=0;j<cuv.length;j++)
+                a[j]="_";
+
+
+        function reset(){
+            
+             random2=Math.floor(Math.random() * i);
+            while (random2==random)
+            random2=Math.floor(Math.random() * i);
+            random=random2;
+            cuv=cuvinte[random];
+            a=[];
+   for(let j=0;j<cuv.length;j++)
+                a[j]="_";
+        random1=Math.floor(Math.random() * cuv.length);
+    for(let o=0;o<cuv.length;o++)
+    if(cuv[o]==cuv[random1])
+    a[o]=cuv[random1];
+    document.getElementById("cap").style.visibility = 'hidden';
+    document.getElementById("corp").style.visibility = 'hidden';
+    document.getElementById("bratstanga").style.visibility = 'hidden';
+    document.getElementById("bratdreapta").style.visibility = 'hidden';
+    document.getElementById("piciorstanga").style.visibility = 'hidden';
+    document.getElementById("piciordreapta").style.visibility = 'hidden';
+    ok1=0;ok2=0;ok3=0;ok4=0;ok5=0;ok6=0;
+    folosite="";
+    document.getElementById("cuvinte").innerHTML=(folosite); 
+
+        }
+
+
+            setInterval(afisare,1)
+            function afisare(){ 
+                literatura='';
+                for( j=0;j<cuv.length;j++)
+				literatura= literatura.concat(a[j]," ");
+				
+			
+                    document.getElementById("necunoscuta").innerHTML=(literatura); 
+            }
+
+
+
+    var ok1=0,ok2=0,ok3=0,ok4=0,ok5=0,ok6=0;
+ function verificare(){
+		if(ok1==0)
+			{ok1++;
+console.log(ok1)
+	document.getElementById("cap").style.visibility = 'visible';
+				}
+}
+   var s=1;
+   document.getElementById("scriss").innerHTML = ("Timp irosit : "+s+" secunde ");
+   setInterval(timp,1000)
+   function timp()
+   {
+       s++;
+       document.getElementById("scriss").innerHTML = ("Timp irosit : "+s+" secunde ");
+   }
+   var folosite="";
+   function cuvant(){
+   let x= window.prompt('Litera ?')
+  	let ok=0;
+       let cuv=cuvinte[random];
+        for(let j=0;j<cuv.length;j++)
+                if(cuv[j]==x)
+                {
+			a[j]=x;
+			ok=1;
+        }
+            if(ok==0)
+	            {folosite=folosite.concat(x," ");document.getElementById("cuvinte").innerHTML=(folosite); 
+			    if(ok1==0)
+				{
+				ok1++;
+				document.getElementById("cap").style.visibility = 'visible';
+				}
+				else
+					if(ok2==0)
+				{
+					ok2++;
+				document.getElementById("corp").style.visibility = 'visible';
+				}else
+					if(ok3==0)
+				{
+					ok3++;
+				document.getElementById("bratstanga").style.visibility = 'visible';
+				}
+					else
+					if(ok4==0)
+				{
+					ok4++;
+				document.getElementById("bratdreapta").style.visibility = 'visible';
+				}else
+					if(ok5==0)
+				{
+					ok5++;
+				document.getElementById("piciorstanga").style.visibility = 'visible';
+				}else
+					if(ok6==0)
+				{
+					ok6++;
+				document.getElementById("piciordreapta").style.visibility = 'visible';
+						alert("Ai pierdut!!!!");
+						a=cuv;
+				}
+            	
+
+}
+			
+   }
+  var random1=Math.floor(Math.random() * cuv.length);
+    for(let o=0;o<cuv.length;o++)
+    if(cuv[o]==cuv[random1])
+    a[o]=cuv[random1];
+
+
+    var literatura='';
+            let j;
+                for( j=0;j<cuv.length;j++)
+				literatura= literatura.concat(a[j]," ");
+</script>
+</html>

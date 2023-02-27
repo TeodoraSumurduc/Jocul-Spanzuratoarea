@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+   <title>test de evaluare</title>
+<script LANGUAGE="JavaScript">
+<!--start of JavaScript hide
+var a=0;
+var b=0;
+var c=0;
+var d=0;
+var e=0;
+var f=0;
+var g=0;
+var h=0;
+var i=0;
+var j=0;
+var p=0;
+
+function checkq1(value)
+{
+if(value==1){a=1}
+else if(value==2){a=0}
+else if(value==3){a=0}
+else a=0
+return a;
+}
+
+function checkq2(value)
+{
+if(value==1){b=0}
+else if(value==2){b=1}
+else if(value==3){b=0}
+else b=0
+return b;
+}
+
+function checkq3(value)
+{
+if(value==1){c=0}
+else if(value==2){c=0}
+else if(value==3){c=0}
+else c=1
+return c;
+}
+
+function checkq4(value)
+{
+if(value==1){d=1}
+else if(value==2){d=0}
+else if(value==3){d=0}
+else d=0
+return d;
+}
+
+function checkq5(value)
+{
+if(value==1){e=0}
+else if(value==2){e=0}
+else if(value==3){e=0}
+else e=1
+return e;
+}
+
+function checkq6(value)
+{
+if(value==1){f=0}
+else if(value==2){f=1}
+else if(value==3){f=0}
+else f=0
+return f;
+}
+
+function checkq7(value)
+{
+if(value==1){g=1}
+else if(value==2){g=0}
+else if(value==2){g=0}
+else g=0
+return g;
+}
+
+function checkq8(value)
+{
+if(value==1){h=0}
+else if(value==2){h=0}
+else if(value==2){h=1}
+else h=0
+return h;
+}
+
+function checkq9(value)
+{
+if(value==1){i=0}
+else if(value==2){i=0}
+else if(value==2){i=1}
+else i=0
+return i;
+}
+
+
+
+function calc(){
+p=a+b+c+d+e+f+g+h+i+j;
+if(p<7)
+{alert('Ati obtinut:'+p+'puncte, mai trebuie sa studiati!');}
+else if(p>=7 & p<10)
+{alert('Felicitari!Ati obtinut:'+p+'puncte');}
+else alert('Sunteti invingator!Ati obtinut:'+p+'puncte');
+return p;
+}
+
+//-->
+</script>
+</head>
+<body background="image1.jpg" nosave>
+
+<center>
+<h1>
+<font face="Arial,Helvetica"><font color="#000099">&nbsp;TEST DE EVALUARE</font></font></h1></center>
+
+<blockquote>
+<blockquote><b><i><font size=+1><font color="#FF0000">&nbsp; </font><font color="#0000FF">Cititi
+cu atentie</font> <font color="#3333FF">cerintele</font></font></i></b><i><font size=+1>
+si <b><font color="#0000FF">bifati raspunsul</font> </b>pe care il considerati
+<b><font color="#0000FF">corect</font>.</b></font></i>
+<p><i><font size=+1>Pentru vizualizarea rezultatului obtinut se va accesa
+butonul <b><font color="#0000FF">Rezultat </font></b><font color="#000000">in
+prezenta cadrului didactic</font><b>.</b></font></i>
+<center><b><i><font color="#FF0000"><font size=+2>SUCCES!</font></font></i></b></center>
+<form name="Question1"><b><i><font color="#000099"><font size=+1>1. Ce se va afisa in urma executarii secventei:
+a= „Primavara”;
+for (int i=1;i<=3;i++) 
+  strcpy(a+1,a+2);
+cout<<a;</font></font></i></b>
+<br><input type="radio" name="Q1" value="1" onClick="checkq1(1);"><b><i><font color="#000000">a).
+Pavara.</font></i></b>
+<br><input type="radio" name="Q1" value="2" onClick="checkq1(2);"><b><i><font color="#000000">b).
+Ara.</font></i></b>
+<br><input type="radio" name="Q1" value="3" onClick="checkq1(3);"><b><i><font color="#000000">c).
+Rim.</font></i></b></form>
+<br><input type="radio" name="Q1" value="4" onClick="checkq1(4);"><b><i><font color="#000000">d).
+Para.</font></i></b></form>
+
+<p><form name="Question2"><b><i><font color="#000099"><font size=+1>2.
+Ce se va afisa in urma executarii urmatoarei secvente de instructiuni:
+x=”Mama”; y=”Macara”;
+if (strcmp(x,y)>0) cout<<x;
+            else if (strcmp(x,y)==0) cout<<”Incorect”;
+                        else cout<<y;</font></font></i></b>
+<br><input type="radio" name="Q2" value="1" onClick="checkq2(1);"><b><i><font color="#000000">a).
+Macara.</font></i></b>
+<br><input type="radio" name="Q2" value="2" onClick="checkq2(2);"><b><i><font color="#000000">b).
+Mama.</font></i></b>
+<br><input type="radio" name="Q2" value="3" onClick="checkq2(3);"><b><i><font color="#000000">c).
+MamaIncorect.</font></i></b></form>
+<br><input type="radio" name="Q2" value="4" onClick="checkq2(4);"><b><i><font color="#000000">d).
+Incorect.</font></i></b></form>
+
+<p><form name="Question3"><b><i><font color="#000099"><font size=+1>3.
+ Daca x este o variabila de tip sir de caractere, care din variante afiseaza 1 daca primul caracter din x este litera mica:</font></font></i></b>
+<br><input type="radio" name="Q3" value="1" onClick="checkq3(1);"><b><i><font color="#000000">a).
+if (x[0]<’z’)
+  cout<<”1”;</font></i></b></form>
+<br><input type="radio" name="Q3" value="2" onClick="checkq3(2);"><b><i><font color="#000000">b).
+if ((x[0]<’z’)||(x[0]>’a’))
+  cout<<”1”;</font></i></b></form>
+<br><input type="radio" name="Q3" value="3" onClick="checkq3(3);"><b><i><font color="#000000">c).
+if (!(x[0]<’z’ && x[0]<’a’) 
+  cout<<”1”;</font></i></b></form>
+<br><input type="radio" name="Q3" value="4" onClick="checkq3(4);"><b><i><font color="#000000">d).
+if (!(x[0]<’a’) && (x[0]<=’z’))
+  cout<<”1”</font></i></b></form>
+
+<p><form name="Question4"><b><i><font color="#000099"><font size=+1>4.
+ Fie declaratiile: char a[30],b[30]; Ce se va afisa in urma executiei secventei:
+x=”dimineata”; y=”min”;
+strcat(y,x+strlen(x)-1);
+p=strstr(y,x);
+if (p!=NULL) cout<<(p-y);
+    else cout<<”0”;</font></font></i></b>
+<br><input type="radio" name="Q4" value="1" onClick="checkq4(1);"><b><i><font color="#000000">a).
+0.</font></i></b></form>
+<br><input type="radio" name="Q4" value="2" onClick="checkq4(2);"><b><i><font color="#000000">b).
+3.</font></i></b></form>
+<br><input type="radio" name="Q4" value="3" onClick="checkq4(3);"><b><i><font color="#000000">c).
+ta.</font></i></b></form>
+<br><input type="radio" name="Q4" value="4" onClick="checkq4(4);"><b><i><font color="#000000">d).
+dieta.</font></i></b></form>
+
+<p><form name="Question5"><b><i><font color="#000099"><font size=+1>5.
+ Care din urmatoarele secvente verifica in mod corect daca un sirul de caractere s este format din acelasi caracter (de forma : s=”AAAAAAA”);</font></font></i></b>
+<br><input type="radio" name="Q5" value="1" onClick="checkq5(1);"><b><i><font color="#000000">a).
+int ok=0;
+for (i=1;i<strlen(s);i++)
+   if (s[i]==s[0]) ok=1;
+if (ok) cout<<”Este”;
+    else cout<<”Nu este”;</font></i></b></form>
+<br><input type="radio" name="Q5" value="2" onClick="checkq5(2);"><b><i><font color="#000000">b).
+int ok=0;
+for (i=0;i<strlen(s);i++)
+   if (s[i]==s[i+1]) ok=1;
+if (ok) cout<<”Este”;
+    else cout<<”Nu este”;</font></i></b></form>
+<br><input type="radio" name="Q5" value="3" onClick="checkq5(3);"><b><i><font color="#000000">c).
+int ok=1;
+for (i=1;i<strlen(s);i++)
+   if (s[i]==s[0]) ok=0;
+if (ok) cout<<”Este”;
+    else cout<<”Nu este”;</font></i></b></form>
+<br><input type="radio" name="Q5" value="4" onClick="checkq5(4);"><b><i><font color="#000000">d).
+int ok=1;
+for (i=1;i<strlen(s);i++)
+   if (s[i]!=s[0]) ok=0;
+if (ok) cout<<”Este”;
+    else cout<<”Nu este”;</font></i></b></form>
+
+<p><form name="Question6"><b><i><font color="#000099"><font size=+1>6.
+ Ce realizeaza secventa urmatoare:
+char s[100];
+cin>>s;
+n=strlen(s);
+i=0;j=n-1;
+while ((i<j)&&(s[i]==s[j])) {i++;j--;}
+if (i>=j) cout<<”Este”;
+    else cout<<”Nu este”;</font></font></i></b>
+<br><input type="radio" name="Q6" value="1" onClick="checkq6(1);"><b><i><font color="#000000">a).
+Verifica daca sirul s este constant sau nu.</font></i></b></form>
+<br><input type="radio" name="Q6" value="2" onClick="checkq6(2);"><b><i><font color="#000000">b).
+Verifica daca sirul s este identic cu inversul lui s (este palindrom).</font></i></b></form>
+<br><input type="radio" name="Q6" value="3" onClick="checkq6(3);"><b><i><font color="#000000">c).
+Verifica daca sirul s este format doar din litere.</font></i></b></form>
+<br><input type="radio" name="Q6" value="4" onClick="checkq6(4);"><b><i><font color="#000000">d).
+Verifica daca sirul s este sau nu format doar din caractere distincte.</font></i></b></form>
+
+<p><form name="Question7"><b><i><font color="#000099"><font size=+1>7.
+Consideram sirul de caractere s in care stim ca are toate caracterele distincte, exceptand ultimele doua care sunt identice. Care din secventele urmatoare afiseaza in mod corect lungimea lui s:</font></font></i></b>
+<br><input type="radio" name="Q7" value="1" onClick="checkq7(1);"><b><i><font color="#000000">a).
+i=0;
+while (a[i]!=a[i+1]) i++;
+cout<<i+2;</font></i></b></form>
+<br><input type="radio" name="Q7" value="2" onClick="checkq7(2);"><b><i><font color="#000000">b).
+i=0;
+while (a[i]!=a[i+1]) i++;
+cout<<i+1;</font></i></b></form>
+<br><input type="radio" name="Q7" value="3" onClick="checkq7(3);"><b><i><font color="#000000">c).
+i=0;
+while (a[i]==a[i+1]) i++;
+cout<<i+2;</font></i></b></form>
+<br><input type="radio" name="Q7" value="4" onClick="checkq7(4);"><b><i><font color="#000000">d).
+i=0;
+while (a[i]!=a[i+1]) i++;
+cout<<i;</font></i></b></form>
+<p><form name="Question8"><b><i><font color="#000099"><font size=+1>8.
+Fie secventa (s este de tip sir de caractere, iar i de tip int)
+for (i=0;i<strlen(s);i++)
+   if (s[i]>=’A’ && s[i]<=’Z’) s[i]=s[i]+’a’-‘A’;
+Secventa realizeaza:</font></font></i></b>
+<br><input type="radio" name="Q8" value="1" onClick="checkq8(1);"><b><i><font color="#000000">a).
+Transformarea literelor mici in litere mari</font></i></b>
+<br><input type="radio" name="Q8" value="2" onClick="checkq8(2);"><b><i><font color="#000000">b).
+Inserarea literelor mici dupa fiecare litera mare</font></i></b>
+<br><input type="radio" name="Q8" value="3" onClick="checkq8(3);"><b><i><font color="#000000">c).
+Transformarea literelor mari in litere mici</font></i></b></form>
+<br><input type="radio" name="Q8" value="4" onClick="checkq8(4);"><b><i><font color="#000000">c).
+Transformarea literelor mari in litere mici</font></i></b></form>
+<p><form name="Question9"><b><i><font color="#000099"><font size=+1>9.
+Care din urmatoarele secvente realizeaza corect eliminarea caracterului ’w’ din sirul s:</font></font></i></b>
+<br><input type="radio" name="Q9" value="1" onClick="checkq9(1);"><b><i><font color="#000000">a).
+char *p,s[100];
+cin>>s;
+while (p=strchr(s,’w’))
+   strcpy(p,p+1);</font></i></b>
+<br><input type="radio" name="Q9" value="2" onClick="checkq9(2);"><b><i><font color="#000000">b).
+char *p,s[100];
+cin>>s;
+while (p=strchr(s,’w’))
+   strcpy(p+1,p);</font></i></b>
+<br><input type="radio" name="Q9" value="3" onClick="checkq9(3);"><b><i><font color="#000000">c).
+char *p,s[100];
+cin>>s;
+while (p=strchr(s,’w’))
+   strcpy(p,p+1);</font></i></b></form>
+<br><input type="radio" name="Q9" value="4" onClick="checkq9(4);"><b><i><font color="#000000">d).
+char *p,s[100];
+cin>>s;
+while (p=strchr(s,”w”))
+   strcpy(p+1,p);</font></i></b></form>
+<form><input type="button" name="ControlButton" value="Rezultat" onClick="calc()"></form></blockquote>
+</blockquote>
+
+<br>&nbsp;
+</body>
+</html>

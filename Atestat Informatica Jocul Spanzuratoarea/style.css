@@ -1,0 +1,141 @@
+.scris2{
+    color:blue;
+    background-color:rgba(34, 34, 204, 0.089);
+}
+.scris{
+    color:red;
+    background-color:rgba(34, 34, 204, 0.089);
+}
+.bodymain{
+    background-color: rgba(233, 16, 147, 0.561);
+   margin-left:100px; margin-top:-320px;    /*200 clasa*/
+}
+.bodymain::-webkit-scrollbar-track{
+    color:blue;
+}
+.trunchi{
+    z-index: -1;
+    position: relative;
+    visibility : visible;
+    width:1em;
+    height:20em;
+    top :20em;
+    background-color:rgb(0, 0, 0);
+}
+.trunchi2{
+    z-index: -1;
+    position:  relative;
+    visibility : visible;
+    width:10em;
+    height:0.5em;
+    background-color:rgb(0, 0, 0);
+    left:10px;
+    top:0em;
+    bottom:15em;
+}
+.cap{
+    z-index: -1;
+    position:  relative;
+    visibility :  hidden;
+    width:4em;
+    height:3.3em;
+    background-color:black;
+    left:8.4em;
+    bottom:15em;
+    border-radius: 50%;
+    top:0em;
+}
+.rope{
+    z-index: -1;
+    position:  relative;;
+    visibility :visible;
+    width:0.5em;
+    height:1.5em;
+    background-color:black;
+    left:10.1em;
+    bottom:15em;
+    top:0em;
+}
+.corp{
+    z-index: -1;
+    position: relative;
+    visibility :  hidden;
+    width:0.5em;
+    height:7em;
+    top :0em;
+    background-color:rgb(0, 0, 0);
+    left:10.1em;
+    /*transform: rotate(45deg);*/
+}
+.bratstanga{
+    z-index: -2;
+    position: relative;
+    visibility :hidden;
+    width:0.3em;
+    height:4em;
+    top :-8em;
+    background-color:rgb(214, 13, 13);
+    left:11.5em;
+    transform: rotate(45deg);
+}
+.bratdreapta{
+    z-index: -2;
+    position: relative;
+    visibility :hidden;
+    width:0.3em;
+    height:4em;
+    top :-12em;
+    background-color:rgb(214, 13, 13);
+    left:9em;
+    transform: rotate(-45deg);
+}
+
+.piciordrept{
+    z-index: -2;
+    position: relative;
+    visibility : hidden;
+    width:0.3em;
+    height:4em;
+    top :-12.5em;
+    background-color:rgb(214, 13, 13);
+    left:11.5em;
+    transform: rotate(145deg);
+}
+.piciorstanga{
+    z-index: -2;
+    position: relative;
+    visibility :hidden;
+    width:0.3em;
+    height:4em;
+    top :-8.5em;
+    background-color:rgb(214, 13, 13);
+    left:9em;
+    transform: rotate(-145deg);
+}
+.meniu{
+    position: relative;
+    top:300px;
+    background-color:rgba(233, 16, 147, 0.561);
+    align-items: center;
+    margin-left:-200px;
+    height:40px;
+}
+.btn-meniu{
+    margin-left:100px;
+    border-radius:40px;
+    border:0px;
+    top:2px;position: relative;
+    background-color:rgb(143, 62, 225);
+    padding:10px;
+    padding-left:20px;
+    padding-right:20px;
+    cursor: pointer;
+}
+.frame{
+    position: relative;
+    top:320px;
+    margin-left:-120px;
+    margin-right:-20px;height:540px;
+    width:105%;
+    border:0px;
+}
